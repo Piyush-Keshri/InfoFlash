@@ -2,12 +2,11 @@ import axios from 'axios';
 
 export const getNews = async () => {
 
-    const url = '';
+    const url = 'http://localhost:8000';
     try {
-        await axios.get(url);
+        return await axios.get(`${url}/news`);
     }
     catch (error) {
         console.log('Error While Calling The News API', error);
     }
-
 }
