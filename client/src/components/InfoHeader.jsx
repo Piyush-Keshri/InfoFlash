@@ -22,7 +22,6 @@ const StyledBox = styled(Box)`
 }  
 `
 const StyledText = styled(Typography)`
-
     color:beige;
     font-size : 22px;
     padding:8px;

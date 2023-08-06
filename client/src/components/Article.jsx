@@ -74,13 +74,14 @@ const Publisher = styled(Typography)`
 `;
 
 const Article = ({ data }) => {
-
+    const imgUrl = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80';
     return (
+
         <Component>
             <Container>
                 <Grid container>
                     <Grid lg={5} md={5} sm={5} xs={12} item>
-                        <Image src={data.image} />
+                        <Image src={data.image === 'None' ? imgUrl : data.image} />
                     </Grid>
                     <RightContainer lg={7} md={7} sm={7} xs={12} item>
                         <Title>{data.title}</Title>

@@ -16,6 +16,8 @@ const DefaultData = async () => {
 
         await news.deleteMany({});
         await news.insertMany(data.news); // Assuming `news` is the property containing the desired data in the API response
+
+
         console.log('Data uploaded successfully');
     } catch (error) {
         console.log('Error', error.message);
